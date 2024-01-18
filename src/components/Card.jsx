@@ -6,7 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 function Card({ data }) {
   return (
     <>
-      <div className="relative flex-shrink-0 w-60 h-80 rounded-[3.2rem]  bg-zinc-900/80 p-5 text-white overflow-hidden">
+      <div className="relative flex-shrink-0 w-[18rem] h-[22rem] rounded-[3.2rem]  bg-zinc-900/80 p-7 text-white overflow-hidden">
         <FaRegFileAlt />
         <p className="text-sm leading-tight mt-5 font-semibold">
           {data.description}
@@ -26,7 +26,7 @@ function Card({ data }) {
             <div
               className={`tag w-full py-4 ${
                 data.tag.tagColor === "blue" ? "bg-blue-600" : "bg-green-500"
-              } flex items-center justify-center`}
+              } flex items-center justify-center cursor-pointer`}
             >
               <h3 className="text-sm font-semibold flex item-center justify-center">
                 {data.tag.tagTitle}
