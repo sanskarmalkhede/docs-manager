@@ -8,7 +8,7 @@ function Card({ data, reference }) {
     <>
       <motion.div drag dragConstraints={reference} whileDrag={{scale: 1.1}} dragElastic={0.2} className="relative flex-shrink-0 w-[18rem] h-[22rem] rounded-[3.2rem]  bg-zinc-900/80 p-7 text-white overflow-hidden">
         <FaRegFileAlt />
-        <p className="text-sm leading-tight mt-5 font-semibold">
+        <p className="text-sm font-sans font-medium mt-5 font-normal ">
           {data.description}
         </p>
         <div className="footer w-full left-0 absolute bottom-0">
